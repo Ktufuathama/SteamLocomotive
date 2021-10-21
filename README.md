@@ -12,7 +12,7 @@ Simple PowerShell implementation of the Linux SL command.
 - Import-BufferCellArray
 - Invoke-Serializer
 
-**You will need to override the build in alias 'SL'. Example below could be placed in your profile.**
+**You will need to override the built in alias 'SL'. Example below could be placed in your profile.**
 ```powershell
 Set-Alias -name 'sl' -value Start-SteamLocomotive -option 'AllScope' -scope 'Global' -force
 ```
