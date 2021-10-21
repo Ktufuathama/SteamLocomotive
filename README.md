@@ -19,6 +19,11 @@ Simple PowerShell implementation of the Linux SL command.
      \_/     \__/  \__/  \__/  \__/      \_/               \_/   \_/    \_/   \_/      
 ```
 
+**You will need to override the built in alias 'SL'. Example below could be placed in your profile.**
+```powershell
+Set-Alias -name 'sl' -value Start-SteamLocomotive -option 'AllScope' -scope 'Global' -force
+```
+
 ## Functions
 - Start-SteamLocomotive
 - ConvertTo-BufferCellArray
@@ -29,8 +34,3 @@ Simple PowerShell implementation of the Linux SL command.
 - Export-BufferCellArray
 - Import-BufferCellArray
 - Invoke-Serializer
-
-**You will need to override the built in alias 'SL'. Example below could be placed in your profile.**
-```powershell
-Set-Alias -name 'sl' -value Start-SteamLocomotive -option 'AllScope' -scope 'Global' -force
-```
