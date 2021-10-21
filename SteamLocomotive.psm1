@@ -134,7 +134,7 @@ function ConvertFrom-SerializedBufferCellArray {
     $SBCA += $SerializedBufferCellArray
   }
   end {
-    $a = @{X=($SBCA[0].Cells.Count - 1);Y=($SBCA.Count - 1)}
+    $a = @{ X=($SBCA[0].Cells.Count - 1); Y=($SBCA.Count - 1) }
     Write-Verbose "y:$($a.Y); x:$($a.X)"
     $BCA = [system.management.automation.host.buffercell[,]]::new(($a.Y + 1), ($a.X + 1))
     for ($y = 0; $y -le $a.Y; $y++) {
@@ -379,7 +379,7 @@ function Start-SteamLocomotive {
   $BE = ConvertTo-BufferCellArray $TE
   $y = $host.UI.RawUI.CursorPosition.Y + 1
   $x = $host.UI.RawUI.WindowSize.Width - 1
-  $c = @{x = $x; y = $y}
+  $c = @{ x = $x; y = $y }
   $a = $true
   while ($true) {
     $c.X = ($c.X - 2)
