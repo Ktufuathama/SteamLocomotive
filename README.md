@@ -24,13 +24,23 @@ Simple PowerShell implementation of the Linux SL command.
 Set-Alias -name 'sl' -value Start-SteamLocomotive -option 'AllScope' -scope 'Global' -force
 ```
 
-## Functions
+## Function(s)
 - Start-SteamLocomotive
-- ConvertTo-BufferCellArray
+- Compress-JsonBufferCellArray
 - ConvertFrom-SerializedBufferCellArray
+- ConvertTo-BufferCellArray
 - ConvertTo-SerializedBufferCellArray
-- Compress-BufferCellArray
-- Expand-BufferCellArray
-- Export-BufferCellArray
-- Import-BufferCellArray
-- Invoke-Serializer
+- Expand-JsonBufferCellArray
+- Export-JsonBufferCellArray
+- Get-BufferCellArrayFromScreen
+- Import-JsonBufferCellArray
+
+## Class(es)
+- SerializedBufferCellArray
+
+## Example
+#### Example getting and setting the buffer.
+![2023-01-19_BCA_1](https://user-images.githubusercontent.com/31010254/213634094-946dac6c-e760-420b-8768-7d05fa61ac89.png)
+
+#### Example serializing and deserializing the BufferCell array. This is a simple way to save the buffercell for later use.
+![2023-01-19_BCA_2](https://user-images.githubusercontent.com/31010254/213637639-dbd5c2e1-1c7c-4825-bcce-457e3ec80936.png)
