@@ -1,5 +1,5 @@
 <#
- == SteamLocomotive ==
+  == SteamLocomotive ==
                        (  ) (@@) ( ) (@) ()   @@  O   @@    O         @@      o        
                    (@@@)                                                               
               (    )                                                                   
@@ -161,7 +161,7 @@ function ConvertFrom-SerializedBufferCellArray {
       Write-Verbose "Match: Xml"
       $SBCA = [system.management.automation.psserializer]::deserialize($SBCA)
     }
-    if ([regex]::match($SBCA, '\[{"Index":').Success) {
+    if ([regex]::match($SBCA, '\[{Index:').Success) {
       Write-Verbose "Match: Json"
       $SBCA = ConvertFrom-Json ($SBCA | Out-String)
     }
